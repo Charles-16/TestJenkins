@@ -17,7 +17,7 @@ pipelineJob(" dataprobe TestFrame "){
                     }
                     branch("*/master")
                 }
-            }
+            } //scm
             //scriptPath("src/dataprobeTestFrame.pipeline")
         } //cpsScm
     } //definition
