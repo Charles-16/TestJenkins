@@ -15,7 +15,7 @@ pipelineJob(" dataprobe TestFrame "){
                         url('https://github.com/Charles-16/TestJenkins.git')
                         credentials "Git Credentials"
                     }
-                    branch("*/master")
+                    branch("**")
                 }
             } //scm
             //scriptPath("src/dataprobeTestFrame.pipeline")
