@@ -1,0 +1,24 @@
+#!/usr/bin/env groovy
+//TestAutomationFramework script
+
+pipeline{
+    agent any
+   // environment{
+   //     DB_CREDS = credentials("{deployLayer}-{ENVIRONMENT}")
+   // } //environment
+
+    stages{
+        stage('TestCase For Environment'){
+            steps{
+                script{
+                    sh """ 
+                    mvn clean package 
+                    """
+                }
+            }
+        } //"-Ddbuser=\${DB_CREDS_USR}" "-Ddbpass=\${DB_CREDS_PWD}"
+    }
+
+
+
+}//pipeline
