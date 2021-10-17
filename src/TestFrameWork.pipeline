@@ -12,6 +12,7 @@ pipeline{
             steps{
                 script{
                     sh """ 
+                    cd maven-package
                     mvn clean package 
                     """
                 }
