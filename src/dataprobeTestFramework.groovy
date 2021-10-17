@@ -12,7 +12,7 @@ pipelineJob(" dataprobe TestFrame "){
                 git {
                     remote {
                         name 'origin'
-                        url('https://github.com/Charles-16/TestJenkins.git')
+                        url('https://github.com/Charles-16/maven-project.git')
                         credentials "Git Credentials"
                     }
                     branch("**")
