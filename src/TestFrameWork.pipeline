@@ -13,7 +13,7 @@ pipeline{
     steps{
 
      checkout([$class: 'GitSCM', branches: [[name: master]], extensions: [[$class: 'CloneOption', timeout: 120]], 
-          userRemoteConfigs: [[credentialsId: "${Git credentials}", url: https://github.com/Charles-16/maven-project.git ]  ]])
+          userRemoteConfigs: [[credentialsId: "${Git credentials}", url: 'https://github.com/Charles-16/maven-project.git' ]  ]])
         }
     }
         stage('TestCase For Environment'){
