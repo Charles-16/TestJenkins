@@ -18,7 +18,7 @@ pipelineJob(" dataprobe TestFrame "){
                     branch("**")
                 }
             } //scm
-            //scriptPath("src/dataprobeTestFrame.pipeline")
+            scriptPath("src/TestFrameWork.pipeline")
         } //cpsScm
     } //definition
 } //pipeline
