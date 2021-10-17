@@ -11,10 +11,7 @@ pipeline{
         stage('TestCase For Environment'){
             steps{
                 script{
-                    sh """ 
-                    cd maven-project
-                    mvn clean package 
-                    """
+                    sh 'mvn clean package'
                 }
             }
         } //"-Ddbuser=\${DB_CREDS_USR}" "-Ddbpass=\${DB_CREDS_PWD}"
