@@ -11,6 +11,7 @@ pipeline{
         stage('TestCase For Environment'){
             steps{
                 script{
+                    sh 'cd maven-project'
                     sh 'mvn clean package'
                 }
             }
