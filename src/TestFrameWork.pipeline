@@ -7,10 +7,10 @@ pipeline{
    //     DB_CREDS = credentials("{deployLayer}-{ENVIRONMENT}")
    // } //environment
     
-    tools{
-    maven 'Maven 3.0.3'
-    jdk 'jdk 1.8.0_301'    
-    }
+    //tools{
+    //maven 'Maven 3.0.3'
+    //jdk 'jdk 1.8.0_301'    
+    //}
 
     stages{
             stage ('git clone') {
