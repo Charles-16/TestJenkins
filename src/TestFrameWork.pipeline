@@ -13,7 +13,7 @@ pipeline{
     }
 
     stages{
-            stage (git clone) {
+            stage ('git clone') {
 
     steps{
        git credentialsId: 'f8a88688-af7c-46e8-aacb-1db645eac5c2', url: 'https://github.com/Charles-16/maven-project.git'
