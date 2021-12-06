@@ -8,7 +8,7 @@ pipeline{
    // } //environment
 
     stages{
-            stage (RM) {
+            stage (git clone) {
 
     steps{
 
