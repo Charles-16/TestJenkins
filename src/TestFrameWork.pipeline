@@ -22,7 +22,8 @@ pipeline{
         stage('Build'){
             steps{
                 script{
-                    sh "mvn clean install"
+                    //sh "mvn clean install"
+                    sh "mvn package"
                 }
             }
         } //"-Ddbuser=\${DB_CREDS_USR}" "-Ddbpass=\${DB_CREDS_PWD}"
